@@ -7,7 +7,7 @@
     $response = file_get_contents($url);
     $response = json_decode($response);
     
-    if (response->success)
+    if ($response->success)
       echo "Verification successful!<hr>";
      else
        echo "Verification failed.<hr>";
