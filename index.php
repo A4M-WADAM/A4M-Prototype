@@ -8,9 +8,9 @@
     $response = json_decode($response);
     
     if (response->success)
-      echo "Verification successful!<hr>"
+      echo "Verification successful!<hr>";
      else
-       echo "Verification failed.<hr>"
+       echo "Verification failed.<hr>";
   }
 ?>
 <html>
