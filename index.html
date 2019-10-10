@@ -1,5 +1,5 @@
 <?php
-  if (isset($_POST['amazingsubmitbutton'])) {
+  if (isset($_POST['submit'])) {
     $clientSecret = "6Lfu-bwUAAAAALHAXq1w3ucgBEql9JuXPIcrIcvL";
     $responseKey = $_POST['g-recaptcha-response'];
     echo $responseKey;
@@ -25,10 +25,10 @@
     <br>- Connect to search console
     <br>- Connect to analytics (+ Add analytics integration in the adblock blocker script)
     <br>- Make a privacy policy
-    <br><form action="index.php" method="post">
+    <br><form action="index.html" method="post">
     <div class="g-recaptcha" data-sitekey="6Lfu-bwUAAAAAEdgfkMP1MBwf92k58GgAHpgIrld"></div>
     <br>
-    <input type="submit" name="amazingsubmitbutton" value="Verify">
+    <input type="submit" name="submit" value="Verify">
     </form>
     <script type="text/javascript"  charset="utf-8">
     // ADBLOCK BLOCKER SCRIPT
