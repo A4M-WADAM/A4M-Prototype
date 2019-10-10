@@ -6,15 +6,18 @@
     
     $url = "https://www.google.com/recaptcha/api/siteverify?secret=$clientSecret&response=$responseKey&remoteip=$userIP";
     $response = file_get_contents($url);
+  }
+?>
+<html>
+  <title>A4M-WADAM Prototype</title>
+  <!--
+  PHP STUFF:
     //$response = json_decode($response);
     //if ($response->success)
       //echo "Verification successful!<hr>";
     //else
        //echo "Verification failed.<hr>";
-  }
-?>
-<html>
-  <title>A4M-WADAM Prototype</title>
+  -->
   <head>
     <script src="https://www.google.com/recaptcha/api.js"></script>
   </head>
