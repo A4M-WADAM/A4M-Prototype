@@ -2,11 +2,12 @@
   if (isset($_POST['amazingsubmitbutton'])) {
     $clientSecret = "6Lfu-bwUAAAAALHAXq1w3ucgBEql9JuXPIcrIcvL";
     $responseKey = $_POST['g-recaptcha-response'];
-    $userIP = $_SERVER['REMOTE_ADDR'];
+    echo $responseKey;
+    //$userIP = $_SERVER['REMOTE_ADDR'];
     
-    $url = "https://www.google.com/recaptcha/api/siteverify?secret=$clientSecret&response=$responseKey&remoteip=$userIP";
-    $response = file_get_contents($url);
-    echo $response;
+    //$url = "https://www.google.com/recaptcha/api/siteverify?secret=$clientSecret&response=$responseKey&remoteip=$userIP";
+    //$response = file_get_contents($url);
+    //echo $response;
   }
 ?>
 <html>
