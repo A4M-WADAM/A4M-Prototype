@@ -1,3 +1,18 @@
+<?php
+  if (isset($_POST['amazingsubmitbutton'])) {
+    $clientSecret = "6Lfu-bwUAAAAALHAXq1w3ucgBEql9JuXPIcrIcvL";
+    $responseKey = $_POST['g-recaptcha-response'];
+    
+    $url = "https://www.google.com/recaptcha/api/siteverify?secret=$clientSecret&response=$responseKey";
+    $response = file_get_contents($url);
+    $response = json_decode($response);
+    
+    if (response->success)
+      echo "Verification successful!<hr>"
+     else
+       echo "Verification failed.<hr>"
+  }
+?>
 <html>
   <title>A4M-WADAM Prototype</title>
   <head>
