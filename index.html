@@ -6,12 +6,12 @@
     $url = "https://www.google.com/recaptcha/api/siteverify?secret=$clientSecret&response=$responseKey";
     $response = file_get_contents($url);
     echo $response;
-    //$response = json_decode($response);
+    # $response = json_decode($response);
     
-    //if ($response->success)
-      //echo "Verification successful!<hr>";
-    //else
-       //echo "Verification failed.<hr>";
+    # if ($response->success)
+      # echo "Verification successful!<hr>";
+    # else
+       # echo "Verification failed.<hr>";
   }
 ?>
 <html>
